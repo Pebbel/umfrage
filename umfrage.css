@@ -29,13 +29,20 @@ input, select{
 .formdiv{
     border-style: solid;
     border-color: black;
-    width: 40%;
+    width: min-content;
     margin-left: auto;
     display: block;
     margin-right: auto;
     padding: 10px;
     background-color: var(--color-background);
     padding-bottom: 35px; /* für submit button */
+    position: relative;
+}
+
+#submit {
+  position: absolute;
+  right:    2px;
+  bottom:   2px;
 }
 
 #comment{
