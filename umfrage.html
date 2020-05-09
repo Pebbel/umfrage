@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Umfrage</title>
+  <link rel="stylesheet" href="umfrage.css">
+</head>
+
+<body>
+  <h1 id="title">Umfrage</h1>
+
+  <div class="formdiv">
+    <p id="description">Dies ist eine Umfrage zu Kaffee.</p>
+
+    <form id="survey-form" action="#" method="post">
+      <table>
+        <tr>
+          <td><label id="name-label" for="name">Name: </label></td>
+          <td><input type="text" name="name" id="name" placeholder="Namenseingabe" required></td>
+        </tr>
+        <tr>
+          <td><label id="email-label" for="email">E-Mail: </label></td>
+          <td>
+            <input type="email" name="email" id="email" placeholder="E-Maileingabe" required></td>
+        </tr>
+        <tr>
+          <td><label id="birth-label" for="birth">Geburtsdatum: </label></td>
+          <td><input type="date" name="birth" id="birth" min="1919-01-01" max="2019-12-31" required></td>
+        </tr>
+        <tr>
+          <td><label id="dropdown-label" for="dropdown">Auswahl: </label></td>
+          <td><select id="dropdown" name="dropdown">
+              <option value="espresso" selected>Espresso</option>
+              <option value="cappucino">Cappucino</option>
+              <option value="bohnenkaffee">Bohnenkaffee</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label id="cafe-label" for="cafe">Café: </label>
+          </td>
+          <td>
+            <input type="radio" name="cafe-home" id="cafe" value="cafe">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label id="home-label" for="home">zu Hause: </label>
+          </td>
+          <td>
+            <input type="radio" name="cafe-home" id="home" value="home" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><br /></td>
+        </tr>
+        <tr>
+          <td>
+            <label id="news-label" for="news">Newsletter: </label>
+          </td>
+          <td>
+            <input type="checkbox" name="news" id="news">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label id="comment-label" for="comment">Kommentar: </label>
+          </td>
+        </tr>
+      </table>
+
+      <textarea name="comment" id="comment" rows="5" cols="44"></textarea>
+
+
+
+
+
+
+      <input type="submit" id="submit" value="Abschicken!" style="float: right">
+    </form>
+  </div>
+</body>
+
+</html>

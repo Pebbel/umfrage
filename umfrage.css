@@ -1,0 +1,43 @@
+:root {
+  --color-background: rgb(226, 194, 124, 0.9);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(beans.jpg);
+  opacity: 0.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+input, select{
+  margin: 5px;
+}
+
+.formdiv{
+    border-style: solid;
+    border-color: black;
+    width: 40%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    padding: 10px;
+    background-color: var(--color-background);
+    padding-bottom: 35px; /* für submit button */
+}
+
+#comment{
+  margin-bottom: 8px;
+}
